@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a nuestra comunidad. Únete a nuestra iglesia y forma parte de esta gran familia.">
+    <meta name="keywords" content="iglesia, comunidad, grupos en casa, familia, búsqueda, TDG">
+    <meta name="author" content="Nombre de la Iglesia">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#ffffff">
+    <title>TDG-Grupos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<!--sección de header-->
+    <section class=header>
+        <h1>NOMBRE IGLESIA</h1>
+    </section>    
+<!--sección de busqueda que dirije a otro html-->
+    <div class=search>
+        <h2>Bienvenido a nuestra comunidad</h2>
+        <form action="opciones.html" method="post">
+            <input type="text" id="searchInput" name="query" placeholder="Buscar...">
+            <button onclick="search()">Buscar</button>
+<!--Filtros de busqueda-->         
+            <section>
+                <h3>Filtros</h3>
+                <label for="Redgrupal">Red</label>
+                <select id="Redgrupal" onchange="applyFilters()">
+                    <option value="">Todas</option>
+                    <option value="Prejus">Prejus (12-20 años)</option>
+                    <option value="Jovenes">Jovenes (20-26 años)</option>
+                    <option value="Adultos">Adultos (26 años en adelante)</option>
+                    <option value="Parejas">Parejas</option>
+                    <option value="Hombres">Hombres</option>
+                    <option value="Mujeres">Mujeres</option>
+                </select>
+                <label for="Ubicacion">Región</label>
+                <select id="Ubicacion" onchange="applyFilters()">
+                    <option value="">Todas</option>
+                    <option value="centro">Zona Central (1,9,10,8,15,14)</option>
+                    <option value="norte">Zona Norte (17,18,6,2)</option>
+                    <option value="sur">Zona Sur (11,12,21,13)</option>
+                    <option value="Este">Zona Este (5,7,16,24)</option>
+                    <option value="Oeste">Zona Oeste (19,3,4)</option>
+                    <option value="Mixco">Mixco</option>
+                    <option value="SanCristobal">San Cristobal</option>
+                    <option value="SantaJose">San José Pinula</option>
+                    <option value="otro">Otro...</option>
+                </select>
+            </section>
+        </form>
+
+        <p>Unete a esta gran familia.</p>
+    </div>
+
+</body>
+</html>
